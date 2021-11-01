@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Info</title>
+    <link rel="stylesheet" href="../static/Developer.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script> src="https://kit.fontawesome.com/a076d05399.js"</script>
+
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+        <header>My App</header>
+        <ul>
+            <li><a href="{{ url_for ('homepage') }}" methods ="GET"><i class ="fas fa-qrcode"></i>Home</a></li>
+            <li><a href="https://github.com/ManthanTakalkar/Wine-Quality-Prediction"><i class ="fas fa-stream" aria-hidden="true"></i>Source Code</a></li>
+            <li><a href="{{url_for ('form')}}" methods="GET"><i class ="fas fa-link"></i>Predictor</a></li>
+            <li><a href="{{ url_for ('appinfo') }}" methods="GET"><i class ="far fa-question-circle"></i>About</a></li>
+        </ul>
+    </div>
+    <section id="navbar">
+        <h2>Contact-me</h2>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/manthan-takalkar-62969a213/" target="_blank">Linkded in</a></li>
+                <li><a href="https://github.com/ManthanTakalkar" target="_blank">Github</a></li>
+                <li><a href="https://www.facebook.com/manthan.takalkar/" target="_blank">facebook</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="animation">
+        <!-- <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="slidebar">
+            <header>My App</header>
+            <ul>
+                <li><a href="../templates/page1.html"><i class ="fas fa-qrcode"></i>Home</a></li>
+                <li><a href="#"><i class ="fas fa-link"></i>Shortcuts</a></li>
+                <li><a href="#"><i class ="fas fa-stream" aria-hidden="true"></i>overview</a></li>
+                <li><a href="#"><i class ="far fa-question-circle"></i>About</a></li>
+                <li><a href="#"><i class ="far fa-envelope"></i>Contact</a></li>
+            </ul>
+        </div> -->
+        <div class="square">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="circle">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="info">
+            <div class="img">
+                <img src="../static/mypic.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Manthan Kailas Takalkar</h2>
+                <p class="aboutMe">Hello myself Manthan Takalkar. I am pursuing my bachelor's degree in IT from Savitribai Phule Pune University. Currently I am learning Python, Data Analysis, Machine Learning, etc. I am also interested in creating front end web applications. At present I am doing my internship in iNeuron.ai in various technologies. Beside this I love playing outdoor games, learning about new things in various fields. I am always ready to make new connections as well open for job and internship opportunities.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="foot">
+            Copyright © 2021 MKT-Wine Quality Predictor | All rights reserved!
+        </div>
+    </footer>    
+</body>
+</html>

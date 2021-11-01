@@ -1,0 +1,86 @@
+body
+{
+    background-image:url("../static/pic2.jpg");
+    height: 1320px; /* You must set a specified height */
+    width:100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:cover;
+    background-position: left;
+    margin:auto;
+    color: white;
+}
+
+body .title
+{
+font-family:calibri;
+font-size:45;
+text-align:center;
+text-shadow: 1px 1px #000000;
+text-transform:uppercase;
+text-decoration: underline;
+}
+
+a{
+font-family : calibri;
+font-size:20px;
+text-decoration:none;
+color:black;
+padding-right:97.7%;
+}
+
+
+.back-page
+{
+font-weight:bold;
+margin-top:-2%;
+position:absolute;
+}
+
+.benefits ul li{
+    padding: 5px 0px;
+}
+
+.button
+{
+border-radius:10px;
+text-align:center;
+font-size:20px;
+font-weight:bold;
+text-transform:uppercase;
+background-color:rgb(43 165 168);
+box-shadow: 1px 0.5px white;
+position:absolute;
+font-family:calibri;
+padding: 1px 12px;
+border: 2px solid black;
+}
+
+.button:hover
+{
+background-color: wheat;
+
+}
+
+.Content{
+    font-weight:bold;
+    padding: 0px 16px;
+
+}
+
+.features ul li{
+    color: wheat;
+}
+
+.foot span{
+    color: red;
+}
+.foot
+{
+background-color: black;
+font-size:20px;
+font-family:calibri;
+text-align:center;
+padding: 5px 0px;
+margin-top:2%;
+}

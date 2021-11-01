@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Info</title>
+    <link rel="stylesheet" href="../static/app_info.css">
+
+<body>
+    <div class="container">
+        <div class="title">
+            <header>
+                <h1>App Info</h1>
+            </header>
+        </div>
+
+        <div class="back-page">
+            <a href="{{ url_for ('homepage') }}" , methods="GET">
+                <input class="button" type="submit" value="Back" name="">
+            </a>
+        </div>
+        <br>
+
+        <div class="Content">
+            <div class="what">
+                <h1>Objective Of Wine Qyality Predictor :</h1>
+            </div>
+
+            <div class="what-ans">
+                <p>
+                    The purpose behind this project is to build an machine learning model which will predict quality of red wine based on some parameters like pH, citric acid, percent of alcohol, etc. Which would help
+                    an individual or a company to check the quality of the red wine.
+                </p>
+            </div>
+
+            <div class="type">
+                <h1>Input Fields Description</h1>
+            </div>
+
+            <div class="features">
+                <ul>
+                    <li>fixed acidity</li>
+                    <p>It tells us that how much amount of nonvolatile acids are present in the wine.</p>
+                    <li>volatile acidity</li>
+                    <p>Volatile acidity is the gaseous acids present in wine, in case if they are highly present it can lead to an unpleasant, vinegar taste.</p>
+                    <li>citric acid</li>
+                    <p>It is weak organic acid, found in citrus fruits naturally. Citric acid can add 'freshness' and flavor to wines.</p>
+                    <li>residual sugar</li>
+                    <p>It is the amount of sugar remaining after fermentation stops.</p>
+                    <li>chlorides</li>
+                    <p>Amount of salt present in wine</p>
+                    <li>free sulfur dioxide</li>
+                    <p>Free form of So2 is used for prevention of wine by oxidation and microbial spoilage.</p>
+                    <li>total sulphur dioxide</li>
+                    <p>Amount of free and bound forms of S02</p>
+                    <li>density</li>
+                    <p>The density of water is close to that of water depending on the percent alcohol and sugar content.</p>
+                    <li>pH</li>
+                    <p> pH is used for checking acidity of wine</p>
+                    <li>sulphates</li>
+                    <p>Added sulfites preserve freshness and protect wine from oxidation, and bacteria.</p>
+                    <li>alcohol</li>
+                    <p>The percent of alcohol present in wine.</p>
+                </ul>
+            </div>
+
+            <div class="bene">
+                <h1>Benefits of Wine Quality Predicton:-</h1>
+            </div>
+
+            <div class="benefits">
+                <ul>
+                    <li>Analyzing the wine qualit is very imporant before its consumption to preserve human health.</li>
+                    <li>Good quality of wine helps to keep our heart healthy.</li>
+                    <li>Good quality of wine has several benefits like it may promote healthy gut bacteria, it is rich in antioxidants,etc.</li>
+                </ul>
+            </div>
+
+            <div class="app-info">
+                <h1>App Info</h1>
+            </div>
+
+            <div class="app-information">
+                <p>This application will help to find out the quality of red wine using the parameters present in the known dataset.</p>
+            </div>
+
+        </div>
+
+
+        <div class="foot">
+            <footer>Developed with <span>❤</span> by Manthan Kailas Takalkar (MKT) </footer>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

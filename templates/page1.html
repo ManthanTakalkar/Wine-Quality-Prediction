@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Wine Quality Prediction</title> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/page_1.css">
+    <title>Red-Wine Quality Prediction</title>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+        <header>My App</header>
+        <ul>
+            <li><a href="{{url_for ('homepage') }}" methods='GET'><i class ="fas fa-qrcode"></i>Home</a></li>
+            <li><a href="https://github.com/ManthanTakalkar/Wine-Quality-Prediction"><i class ="fas fa-stream" aria-hidden="true"></i>Source Code</a></li>
+            <li><a href="{{url_for ('appinfo') }}" methods='GET'><i class ="far fa-question-circle"></i>About</a></li>
+            <li><a href="{{url_for ('developer')}}" methods="GET"><i class ="far fa-envelope"></i>Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="Home">  
+        <h1 class='Title'>Welcome To Wine Quality Predictor</h1>
+        <h5 class='warning'>⚠️This website is not intended for promoting alcohol abuse, binge drinking, or any other forms of abuse.</h5>
+          
+        <div id="predict">
+            <ul>
+                <li>
+                    <a href="{{ url_for ('form') }}" , methods = "GET">
+                    <i class="fa fa-share" aria-hidden="true"></i>
+                    <span> - Predictor </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="https://github.com/ManthanTakalkar" target="_blank"><i class ="fab fa-github"></i>Github</a></li>
+                <li><a href="https://www.linkedin.com/in/manthan-takalkar-62969a213/" target="_blank"><i class ="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://join.skype.com/invite/uBOPwomPAGjs" target="_blank"><i class ="fab fa-skype"></i>Skype</a></li>
+            </ul>
+        </div>
+        <footer>
+            <div id="foot">
+                Copyright © 2021 MKT-Wine Quality Predictor | All rights reserved!
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>

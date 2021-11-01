@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor</title>
+    <link rel="stylesheet" href="../static/form.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+        <header>My App</header>
+        <ul>
+            <li><a href="{{url_for ('homepage') }}" methods='GET'><i class="fas fa-qrcode"></i>Home</a></li>
+            <li><a href="{{url_for ('appinfo') }}" methods='GET'><i class="far fa-question-circle"></i>About</a></li>
+            <li><a href="{{url_for ('developer')}}" methods="GET"><i class="far fa-envelope"></i>Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="Home">
+        <section id="form">
+            <h1 class="h-primary">Input Fields</h1>
+            <div id="box">
+                <form action="{{url_for ('predict')}}" method="POST">
+                    <div class="from-item">
+                        <label for="name">Fixed Acidity (Range between 4.6 to 15.9):</label>
+                        <input type="number" name='Fixed Acidity' min="4.5" max="16.00" placeholder="Enter Your Value"
+                            required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Volatile Acidity (Range between 0.12 to 1.58):</label>
+                        <input type="number" name='Volatile Acidity' min=".11" max="1.60" placeholder="Enter Your Value"
+                            required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Citric Acid (Range between 0.0 to 1.0):</label>
+                        <input type="number" name='Citric Acid' min="0.0" max="1.00" placeholder="Enter Your Value"
+                            required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Residual Sugar (Range between 0.9 to 15.5):</label>
+                        <input type="number" name='Residual Sugar' min="0.5" max="16.00" placeholder="Enter Your Value"
+                            required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Chlorides (Range between 0.01 to 0.61):</label>
+                        <input type="number" name='Chlorides' min="0.01" max="0.70" placeholder="Enter Your Value"
+                            required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Free Sulfur Dioxide (Range between 1.0 to 72.0):</label>
+                        <input type="number" name="Free Sulfur Dioxide" min="1.0" max="75.00"
+                            placeholder="Enter Your Value" required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Total Sulfur Dioxide (Range between 6.0 to 289.0):</label>
+                        <input type="number" name='Total Sulfur Dioxide' min="5.0" max="290.00"
+                            placeholder="Enter Your Value" required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Density (Range between 0.9900 to 1.0000):</label>
+                        <input type="number" name="Density" min="0.9850" max="1.0000"
+                            placeholder="Enter Your Value" required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">PH (Range between 2.74 to 4.01):</label>
+                        <input type="number" name='pH' min="2.7" max="5.00" placeholder="Enter Your Value"
+                            required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Sulphates (Range between 0.33 to 2.00):</label>
+                        <input type="number" name="Sulphates" min="0.3" max="2.50" placeholder="Enter Your Value"
+                            required="required" step="any">
+                    </div>
+                    <div class="from-item">
+                        <label for="name">Alcohol (Range between 8.4 to 15.00):</label>
+                        <input type="number" name='Alcohol' min="7.00" max="16.00" placeholder="Enter Your Value"
+                            required="required" step="any">
+                    </div>
+                    <div id="btns">
+                        <button class="btn" type="reset"><span></span> Reset</button>
+                        <a href="{{ url_for ('predict') }}"  methods = "GET">
+                            <button class="btn" type="submit"><span></span>Predict</button>
+                        </a>
+                        <!-- <button class="btn" type="submit"><span></span>Predict</button> -->
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div id="foot">
+            Copyright © 2021 MKT-Wine Quality Predictor | All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
